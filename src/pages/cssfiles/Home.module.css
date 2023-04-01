@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+.backgroundAndfont {
+  background-image: url('../backgrounds/pexels-anna-tarazevich-6711867.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 92.2vh;
+  width: 100vw;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  z-index: -1;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding:0 0 0 0 ;
+  margin:0px;
+}
+
+.loginContents {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  position: relative;
+  height: 100%;
+
+}
+
+.loginBox {
+  background-color: rgba(89, 170, 82, 0.808);
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 0 10px 0 rgb(220, 253, 246);
+  padding:2rem;
+  border-radius: 5px;
+  color:white;
+  text-align: center;
+}
+
+.loginBox h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  width: 20rem;
+  text-shadow: 0 0 10px #0ecc28, 0 0 4px #33f07b;
+}

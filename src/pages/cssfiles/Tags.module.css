@@ -1,0 +1,27 @@
+.tagback {
+    background-image: url('../backgrounds/pexels-min-an-1353938.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:0px; 
+    min-height:100%; 
+    width:100%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: -1;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;   
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #021b07;
+    text-align: center;
+    border-radius: 10px;
+    text-shadow: rgb(17, 202, 79) 2px 2px;
+    margin:2rem;
+    padding: 1rem;
+}

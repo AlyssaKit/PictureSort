@@ -1,0 +1,176 @@
+.navbar{
+    background-color: #136131;
+    overflow: hidden;
+    top: 0;
+    left:0px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+    z-index:1000;
+}
+
+
+.navButton {
+    background-color: #136131;
+    border-width: 0 4px 0 0;
+    padding: 12px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+@media screen and (max-width: 630px) {
+    .navButton {
+        font-size: 13px;
+        padding: 6px 15px 5px 15px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .navButton {
+        
+        padding: 9px 22px 7px 22px;
+    }
+}
+.webTitle{
+    font-size: 25px;
+    background-color: #136131;
+    border-width: 0 4px 0 0;
+    padding: 12px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.navButton:hover{
+    background-color: #8fdfa8;
+    color: #2b2a2a;
+}
+
+
+.list{
+    background-color: #136131;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px;
+    align-items: center;
+    position:fixed;
+    left: 2.58%;
+    right: 76.02%;
+    top: 5.4%;
+    bottom: justify;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+    z-index:2;
+}
+
+
+.searching {
+    font-size: 25px;
+    background-color: #136131;
+    border-width: 0 4px 0 0;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    float: right; 
+    padding: 7px 50px 0px 0px;
+
+}
+
+.searchButton{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: white;
+    background-color: #13943ac9;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    animation-name: leaving;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    margin:0px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes leaving {
+    from {transform: scale(.9)}
+    to {transform: scale(.8)}
+}
+
+.searchButton:hover:after{
+    font-size:  15px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1px;
+    margin: 2px;
+}
+.searchButton:hover{
+    transform: translateX(0);
+    animation-name: example;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    margin:0px;
+}
+
+@keyframes example {
+    from {transform: scale(.8);}
+    to {transform: scale(.9);}
+}
+
+
+.searchBar {
+    padding: 5px;
+    border: 0px ;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 0 rgb(19, 94, 4);
+}
+
+
+@media screen and (max-width: 530px) {
+    .navbar{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .webTitle{
+        font-size: 20px;
+        padding: 0px;
+    }
+    .searching{
+        font-size: 20px;
+        padding: 0px 0px 10px 0px;
+    }
+    
+}

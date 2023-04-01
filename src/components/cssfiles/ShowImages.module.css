@@ -1,0 +1,106 @@
+.imagegrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: .5rem;
+    padding: 2rem;
+    margin: 0rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.image {
+    height: 15rem;
+    max-width: 250px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    margin:0;
+}
+
+.imageCard {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    object-fit: cover;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    min-width: 250px;   
+    animation-name: leaving;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    margin: 1rem 1rem 0 0;
+}
+    
+    @keyframes leaving {
+        from {transform: scale(1.2)}
+        to {transform: scale(1)}
+        from {  box-shadow: 0 0 100px rgb(0, 0, 0);}
+        to { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7)}
+        from { z-index: 30}
+        to { z-index: 0}
+    }
+
+
+.hide {
+    display: none;
+}
+      
+.noHide:hover {
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+    display: block;
+    border-width: 0;
+}
+.noHide:hover + .hide {
+    display: block;
+    border-width: 0;
+}
+.hide:hover {
+    display: block;
+    border-width: 0;
+    margin:0;
+}
+
+.imagegrid p {
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: .75rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 5px 5px;
+}
+.imagegrid a {
+    text-decoration: none;
+    color: black;
+}
+
+.imagegrid a:hover {
+    color:rgb(7, 179, 7);
+}
+.link:hover {
+    font-weight: bold;
+}
+
+/* .imageCard:hover {
+    z-index: 30;
+    box-shadow: 0 0 100px rgb(0, 0, 0);
+    animation-name: picMove;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-color: rgb(255, 255, 255);
+    margin:-10rem;
+  }
+  
+@keyframes picMove {
+    from {transform: scale(1)}
+    to {transform: scale(1.2)}
+    from { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7)}
+    to {  box-shadow: 0 0 100px rgb(0, 0, 0)}
+}
+
+.imageCard:hover p {
+    padding: .2rem;
+    border-radius: 0 0 0px 0px;
+    border-width: 0px;
+    margin:0px;
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+} */

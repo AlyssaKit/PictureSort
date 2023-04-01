@@ -1,0 +1,47 @@
+.loginBut{
+    box-shadow:  0 0 10px #0ecc28, 0 0 4px #33f07b;
+    border: 1px solid #c3dfc1;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: white;
+    background-color: #066322e7;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    animation-name: leaving;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    margin:0px;
+    }
+    
+    @keyframes leaving {
+        from {transform: scale(1.01)}
+        to {transform: scale(.9)}
+    }
+    
+    .loginBut:hover:after{
+        font-size:  15px;
+        font-weight: normal;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        padding: 2px;
+        margin: 3px;
+    }
+    .loginBut:hover{
+        transform: translateX(0);
+        animation-name: example;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        margin:0px;
+    
+      }
+    
+    @keyframes example {
+        from {transform: scale(.9);}
+        to {transform: scale(1.01);}
+    }

@@ -1,0 +1,71 @@
+
+.soloImageCard {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(111, 165, 140, 0.904);
+    color: white;
+    font-weight: 600;
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.soloImageCard h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: .5rem 0 0 0;
+}
+
+.soloBack{
+    background-image: url('../backgrounds/pexels-monstera-6373677.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:0px; 
+    min-height:100%; 
+    width:100%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: -1;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.soloImageCard img{
+   height: 30rem;
+   border-radius: 5px;
+}
+
+@media screen and (max-width: 800px)  {
+    .soloImageCard img{
+        height: 19rem;
+    }
+    .soloImageCard h1 {
+        font-size: 1.5rem;
+    }
+    .soloImageCard {
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 550px){
+    .soloImageCard img{
+        height: 13rem;
+    }
+    .soloImageCard {
+        margin-top: 100px;
+    }
+}
+
+@media  screen and (max-height: 500px) {
+    .soloImageCard {
+        margin-top: 30px;
+    }
+}

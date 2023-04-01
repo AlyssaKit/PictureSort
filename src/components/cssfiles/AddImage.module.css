@@ -1,0 +1,74 @@
+
+.upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: white;
+    background-color: #13943ac9;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    animation-name: leaving;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    margin:0px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+}
+
+@keyframes leaving {
+    from {transform: scale(1)}
+    to {transform: scale(.8)}
+}
+
+.upload:hover:after{
+    font-size:  15px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px;
+    margin: 3px;
+}
+.upload:hover{
+    transform: translateX(0);
+    animation-name: example;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    margin:0px;
+
+  }
+
+@keyframes example {
+    from {transform: scale(1);}
+    to {transform: scale(1.05);}
+}
+
+.addContents{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    position: relative;
+}
+
+.input {
+    padding: .5rem;
+    margin: 3px;
+    border: 0px ;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 0 rgb(19, 94, 4);
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
